@@ -1,0 +1,14 @@
+{
+  "status": "done",
+  "assets": {
+    "main-059531419e2b2c1c2344.js": {
+      "name": "main-059531419e2b2c1c2344.js",
+      "path": "C:\\Users\\bonap\\workspace\\ecopsback\\ecopsback\\app\\static\\bundles\\main-059531419e2b2c1c2344.js"
+    }
+  },
+  "chunks": {
+    "main": [
+      "main-059531419e2b2c1c2344.js"
+    ]
+  }
+}
