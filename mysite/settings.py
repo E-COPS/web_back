@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'catube',
     'app',
     'webpack_loader',
+    'rest_framework',
 ]
 WEBPACK_LOADER = {
     'DEFAULT': {
