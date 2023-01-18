@@ -1,8 +1,17 @@
-from django.shortcuts import render
-from django.shortcuts import HttpResponse
-# Create your views here.
+from django.views.generic import View
+from django.http import HttpResponse
+from django.conf import settings
+import os
 
-def index(requests):
-    return HttpResponse("hi")
-def test01(requests):
-    return render(requests, 'testhtml01.html', {})
+class ReactAppView(View):
+
+    def get(self, request):
+        try:
+            with open(os.path.join(str(settings.ROOT_DIR),
+                                    'front',
+                                    'build',
+                                    'index.html')) as file:
+                return HttpResponse(file.read())
+
+        except:
+            return HttpResponse(status=501,)

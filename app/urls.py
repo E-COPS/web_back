@@ -1,7 +1,10 @@
-from django.urls import path
-from app import views
+from django.contrib import admin
+from django.urls import path, include, re_path
+from . import views
+from django.views.generic import TemplateView
+from rest_framework import routers
+
 
 urlpatterns = [
-    path('',views.index),
-    path('app/test01', views.test01)
+    path("",views.ReactAPPView.as_view()),
 ]
