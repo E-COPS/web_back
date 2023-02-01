@@ -16,7 +16,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 #BASE_DIR = Path(__file__).resolve().parent.parent
-BASE_DIR      = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+BASE_DIR= os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'ecopsback')
 APPS_DIR = os.path.join(BASE_DIR,'app')
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__)) # This is your Project Root
@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ['127.0.0.1','pythonanywhere.com','localhost']
 
 INSTALLED_APPS = [
     'corsheaders',
+    'board.apps.BoardConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -143,7 +144,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
 STATICFILES_DIRS = [
     os.path.join(APPS_DIR,'static'),
-    os.path.join(ROOT_DIR,'webv2_front/build/static'),
+    os.path.join(ROOT_DIR,'../webv2_front/build/static'),
 ]
 
 #STATICFILES_FINDERS = [
@@ -156,3 +157,6 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL = '/media/'
