@@ -8,7 +8,7 @@ class ReactAppView(View):
     def get(self, request):
         try:
             with open(os.path.join(str(settings.ROOT_DIR),
-                                    'front',
+                                    'webv2_front',
                                     'build',
                                     'index.html')) as file:
                 return HttpResponse(file.read())

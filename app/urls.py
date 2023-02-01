@@ -6,5 +6,5 @@ from rest_framework import routers
 
 
 urlpatterns = [
-    path("",views.ReactAPPView.as_view()),
+    path("",views.ReactAppView.as_view()),
 ]
