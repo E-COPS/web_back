@@ -68,8 +68,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = False
+
+#위에꺼 false로 바꾸어 whitelist 해야 보안성 높아짐
 CORS_ORIGIN_WHITELIST = (
+    'http://127.0.0.1:3000',
     'http://127.0.0.1:8000',
 )
 CORS_ALLOW_CREDENTIALS = True
@@ -79,8 +81,10 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
-       # 'APP_DIRS': True,
+        'DIRS': [
+            os.path.join(BASE_DIR, 'webv2_front','build')
+        ],
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -130,7 +134,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -140,17 +144,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
+
+STATIC_ROOT = os.path.join(ROOT_DIR,"staticfiles")
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
+
 STATICFILES_DIRS = [
-    os.path.join(APPS_DIR,'static'),
-    os.path.join(ROOT_DIR,'../webv2_front/build/static'),
+    #os.path.join(APPS_DIR,'static'),
+    os.path.join(BASE_DIR,'webv2_front','build','static'),
 ]
 
-#STATICFILES_FINDERS = [
-#    'django.contrib.staticfiles.finders.FileSystemFinder',
-#    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#]
+STATICFILES_FINDERS = [
+   'django.contrib.staticfiles.finders.FileSystemFinder',
+   'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
 
 
 # Default primary key field type

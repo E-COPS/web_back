@@ -13,26 +13,27 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import django
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import TemplateView
 
 # import board.views
 from board import views as bv
-from app import views
+# from app import views
+#
+# from django.conf.urls.static import static
+# from django.conf import settings
 
-from django.conf.urls.static import static
-from django.conf import settings
 
-app_name = 'board'
+
+#app_name = 'board'
 urlpatterns = [
-    # path('admin/', admin.site.urls), #기본
-    path("",views.ReactAppView.as_view()),
-
+    path('admin/', admin.site.urls),
+    path('',TemplateView.as_view(template_name='index.html')),
     # path('',views.index ,include('app.urls')),
     # path('<int:board_id>/',views.detail, name='detail'),
-    path('write/', bv.write, name='write'),
+    #path('write/', bv.write, name='write'),
     # path('write/write_board',views.write_board, name='write_board'),
     # path('<int:board_id>/create_reply',views.create_reply,name='create_reply'),
 ]
-
-urlpatterns +=static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
