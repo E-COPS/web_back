@@ -11,7 +11,7 @@ class Board(models.Model):
     """
     title = models.CharField(max_length=100)
     content = models.CharField(max_length=500)
-    photo = models.ImageField(blank=True, null=True)
+    photo = models.ImageField(blank=True,upload_to='images/',null=True)
     author = models.CharField(max_length=100)
     like_count = models.PositiveIntegerField(default=0) # 양수입력 필드
     pub_date = models.DateTimeField()
