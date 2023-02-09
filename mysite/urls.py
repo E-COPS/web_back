@@ -17,26 +17,34 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
+
+import app.views
 from app import views
 
 #게시판
-from board import views as board
+from board import views as bd
 #게시판-이미지
 from django.conf.urls.static import static
 from django.conf import settings
 
+from app import views as ap
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',TemplateView.as_view(template_name='index.html')),
-    # path('',views.index ,include('app.urls')),
+    #메인 화면 - React 연결
+    path('',include('app.urls')),
+
+
+
+
     #게시판
     path('board/', include('board.urls', namespace='board')),
-    path('postmain/', board.index, name='index'),
-    path('<int:board_id>/', board.detail, name='detail'),
-    path('write/', board.write, name='write'),
-    path('write/write_board', board.write_board, name='write_board'),
-    path('<int:board_id>/create_reply', board.create_reply, name='create_reply'),
+    path('postmain/', bd.index, name='postmain'),
+    path('<int:board_id>/', bd.detail, name='detail'),
+    path('write/', bd.write, name='write'),
+    path('write/write_board', bd.write_board, name='write_board'),
+    path('<int:board_id>/create_reply', bd.create_reply, name='create_reply'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
