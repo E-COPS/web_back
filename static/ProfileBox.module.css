@@ -1,0 +1,21 @@
+.container {
+  background-color: '#1A1C1D';
+  width: 220;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImg {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.profileText {
+  font-size: 15px;
+  color: white;
+}
