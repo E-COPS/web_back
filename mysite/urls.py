@@ -26,25 +26,23 @@ from board import views as bd
 #게시판-이미지
 from django.conf.urls.static import static
 from django.conf import settings
-
-from app import views as ap
+import django.views.generic
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #path('api-auth',include('rest_framework.urls')),
+
     #메인 화면 - React 연결
     path('',include('app.urls')),
 
+    #path('main', views.ReactAppView.as_view),
+    #activity main페이지
 
+    #path('', include('board.urls')),
+    #api
+    #path('',include('api.urls'),)
 
-
-    #게시판
-    path('board/', include('board.urls', namespace='board')),
-    path('postmain/', bd.index, name='postmain'),
-    path('<int:board_id>/', bd.detail, name='detail'),
-    path('write/', bd.write, name='write'),
-    path('write/write_board', bd.write_board, name='write_board'),
-    path('<int:board_id>/create_reply', bd.create_reply, name='create_reply'),
 ]
-
+# urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

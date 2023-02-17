@@ -1,0 +1,26 @@
+.navStyle {
+  margin-top: 20px;
+  background-color: #1A1C1D;
+}
+
+/* 큰 화면 */
+@media screen and (min-width:1000px) {
+  .navStyle {
+    height: 100px;
+  }
+}
+
+.navText {
+  color: white;
+  font-size: 15px;
+}
+
+.iconImg {
+  width: 25px;
+  height: 25px;
+  margin: 0px 2px;
+}
+
+.menuIcon {
+  font-size: 30px;
+}
