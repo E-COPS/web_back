@@ -20,19 +20,19 @@ import mysite.settings
 #             return HttpResponse(
 #                 status=501,
 #             )
-def index(request):
-    return render(request, 'Home.js')
+def Home(request):
+    return render(request, 'home.html')
 def program(request):
-    return render(request,'../static/Program.js')
+    return render(request,'Program.html')
 
 def member(request):
-    return render(request, '../staticfiles/Member.js')
+    return render(request, '../static/Member.js')
 
 def activity(request):
-    return render(request, '../staticfiles/Activity.js')
+    return render(request, '../static/Activity.js')
 #
 def recruitment(request):
-    return render(request, '../staticfiles/Recruitment.js')
+    return render(request, '../static/Recruitment.js')
 
 class ActivityView(TemplateView):
     template_name = 'Activity.js'
@@ -42,6 +42,8 @@ class ActivityView(TemplateView):
 
     def my_view(request, path=''):
         return render('Activity.js', context={'context_variable':'value'})
+
+
 
 
 

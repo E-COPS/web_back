@@ -1,6 +1,6 @@
 from django.views.generic import TemplateView
 from django.urls import path
-from . import views
+from app import views
 
 # #rest_framwork
 # from django.urls import include, path
@@ -15,11 +15,12 @@ from . import views
 
 urlpatterns = [
     #main page
-    path('', TemplateView.as_view(template_name='index.html'), name='index'),
-    #path('', views.index, name='home'),
+    #path('', TemplateView.as_view(template_name='index.html'), name='index'),
+    path('',views.Home, name='home'),
     #path('', views.ReactAppView.as_view),
     #Program
-    path('program/', TemplateView.as_view(template_name='../static/Program.js'), name='program'),
+    #path('program/', TemplateView.as_view(template_name='Program.js'), name='program'),
+    path('program/', views.program, name='program'),
     #Member
     path('member/', views.member, name='member'),
     #Activity는 board/urls.py에 따로
