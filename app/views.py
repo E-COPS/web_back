@@ -11,18 +11,19 @@ import mysite.settings
 
 
 #react
-class ReactAppView(View):
-    def get(self, request):
-        try:
-            with open(os.path.join(str(settings.ROOT_DIR), 'webv2_front', 'build', 'index.html')) as file:
-                return HttpResponse(file.read())
-        except:
-            return HttpResponse(
-                status=501,
-            )
-
+# class ReactAppView(View):
+#     def get(self, request):
+#         try:
+#             with open(os.path.join(str(settings.ROOT_DIR), 'webv2_front', 'build', 'index.html')) as file:
+#                 return HttpResponse(file.read())
+#         except:
+#             return HttpResponse(
+#                 status=501,
+#             )
+def index(request):
+    return render(request, 'Home.js')
 def program(request):
-    return render(request, '../staticfiles/Program.js')
+    return render(request,'../static/Program.js')
 
 def member(request):
     return render(request, '../staticfiles/Member.js')

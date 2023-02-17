@@ -36,7 +36,7 @@ urlpatterns = [
     #메인 화면 - React 연결
     path('',include('app.urls')),
 
-    path('main', views.ReactAppView.as_view),
+    #path('main', views.ReactAppView.as_view),
     #activity main페이지
 
     #path('', include('board.urls')),
