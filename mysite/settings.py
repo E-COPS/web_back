@@ -18,7 +18,7 @@ import os
 #BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR= os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'web_back')
 APPS_DIR = os.path.join(BASE_DIR,'app')
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'static')
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__)) # This is your Project Root
 
 # Quick-start development settings - unsuitable for production
