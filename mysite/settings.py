@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-938a1&rk4gq)#0oq@#s7cwm3!yapg4wsyc6dgwp3d3pisd=t&v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','pythonanywhere.com','localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -48,8 +48,15 @@ INSTALLED_APPS = [
     'app',
     'webpack_loader',
     'rest_framework',
-
+    'api',
 ]
+REST_FRAMEWORK={
+    'DEFAULT_PERMISSION_CLASSES': [
+          'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ],
+}
+
+
 WEBPACK_LOADER = {
     'DEFAULT': {
         'BUNDLE_DIR_NAME': 'bundles/',
@@ -82,7 +89,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates')
+            os.path.join(BASE_DIR, 'mysite','staticfiles')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -146,11 +153,11 @@ USE_TZ = True
 
 
 STATIC_ROOT = os.path.join(ROOT_DIR,"staticfiles")
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 
 STATICFILES_DIRS = [
     #os.path.join(APPS_DIR,'static'),
-    os.path.join(BASE_DIR,'webv2_front','build','static'),
+    #os.path.join(BASE_DIR,'mysite','staticfiles'),
 ]
 
 STATICFILES_FINDERS = [
