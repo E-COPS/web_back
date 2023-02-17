@@ -16,7 +16,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 #BASE_DIR = Path(__file__).resolve().parent.parent
-BASE_DIR= os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'ecopsback')
+BASE_DIR= os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'web_back')
 APPS_DIR = os.path.join(BASE_DIR,'app')
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__)) # This is your Project Root
@@ -44,11 +44,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'catube',
+
     'app',
     'webpack_loader',
     'rest_framework',
-    'api',
+
 ]
 REST_FRAMEWORK={
     'DEFAULT_PERMISSION_CLASSES': [
@@ -152,7 +152,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 
-#STATIC_ROOT = os.path.join('staticfiles')
+STATIC_ROOT = os.path.join('staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
