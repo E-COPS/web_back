@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+
+
+ uwsgi --http :8000 --home /home/ubuntu/venv --chdir /home/ubuntu/ecops/back_src/web_back -w mysite.wsgi
