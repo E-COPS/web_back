@@ -1,8 +1,8 @@
-import NavBar from './NavBar';
-import BottomBar from './BottomBar';
+import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
 import styles from './Recruitment.module.css';
-import Button from './Recruitment_Button';
-import logo from './logo-img.png';
+import Button from '../components/Recruitment_Button';
+import logo from '../images/logo-img.png';
 /*import { Button } from 'bootstrap';*/
 /*import toggleButton from '../components/Toggle_Button';*/
 import React, { useState } from 'react';

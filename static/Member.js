@@ -1,10 +1,10 @@
-import NavBar from './NavBar';
-import BottomBar from './BottomBar';
-import TextBox from './TextBox';
-import ProfileBox from './ProfileBox';
-import backend from './backend-icon.png';
-import frontend from './frontend-icon.png';
-import design from './design-icon.png';
+import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
+import TextBox from '../components/TextBox';
+import ProfileBox from '../components/ProfileBox';
+import backend from '../images/backend-icon.png';
+import frontend from '../images/frontend-icon.png';
+import design from '../images/design-icon.png';
 import styles from './Member.module.css';
 import { useMediaQuery } from 'react-responsive';
 

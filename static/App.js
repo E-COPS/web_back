@@ -1,24 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from '../static/Home';
-import Activity from '../static/Activity';
-import Program from '/static/Program';
-import Member from './Member';
-import Recruitment from './Recruitment';
-import Beginner from './Beginner';
-import Challenger from './Challenger';
-import Webhacking from './Webhacking';
-import Reversing from './Revesing';
-import Forensic from './Forensic';
-import Development from './Development';
+import Home from './routes/Home';
+import Activity from './routes/Activity';
+import Program from './routes/Program';
+import Member from './routes/Member';
+import Recruitment from './routes/Recruitment';
+import Beginner from './routes/Beginner';
+import Challenger from './routes/Challenger';
+import Webhacking from './routes/Webhacking';
+import Reversing from './routes/Revesing';
+import Forensic from './routes/Forensic';
+import Development from './routes/Development';
 
 
 // style 전체 적용
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: "Inter";
-    src: url("Inter-VariableFont_slnt,wght.ttf") format("truetype");
+    src: url("./fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
   }
 
   body {

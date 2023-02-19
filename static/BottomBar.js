@@ -2,11 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import styles from './BottomBar.module.css';
-import insta from './insta-icon.png';
-import github from './github-icon.png';
-import mail from './mail-icon.png';
-import blog from './blog-icon.png';
-import feedback from './feedback-icon.png';
+import insta from '../images/insta-icon.png';
+import github from '../images/github-icon.png';
+import mail from '../images/mail-icon.png';
+import blog from '../images/blog-icon.png';
+import feedback from '../images/feedback-icon.png';
 import { FaInfoCircle } from "react-icons/fa";
 
 

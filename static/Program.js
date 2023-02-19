@@ -1,6 +1,6 @@
-import NavBar from 'static/NavBar';
-import BottomBar from 'static/BottomBar';
-import styles from 'static/Program.module.css';
+import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
+import styles from './Program.module.css';
 import { useMediaQuery } from 'react-responsive';
 
 function Program(){
@@ -23,9 +23,9 @@ function Program(){
       {isMobile?
       <div className={styles.contentContainer}>
       {/* 소제목 */}
-      <text className={styles.errorBox26}>
-        <text className={'{$styles.titleText} ${styles.errorBox27}'}>학기 중 Session</text>
-      </text>
+      <div style={{justifyContent: 'center'}}>
+        <text className={styles.titleText} style={{fontSize: 24, padding: 0, margin: 0}}>학기 중 Session</text>
+      </div>
       {/* beginner box */}
       <div className={styles.smallRowContainer}>
         <text className={styles.boxTitleText}>Beginner Track</text>
@@ -39,8 +39,8 @@ function Program(){
       </div>
       :
       <div className={styles.contentContainer}>
-          <div className={styles.errorBox110}>
-          <text className={'{$styles.titleText} ${styles.errorBox43}'}>학기 중 Session</text>
+      <div style={{width: 1000,}}>
+          <text className={styles.titleText} style={{fontSize: 32, padding: 0, margin: 0}}>학기 중 Session</text>
       </div>
       <div className={styles.rowContainer}>
           {/* beginner box*/}
@@ -61,33 +61,33 @@ function Program(){
       {isMobile?
       <div className={styles.contentContainer}>
         {/* 소제목 */}
-         <text className={styles.errorBox26}>
-          <text className={'{$styles.titleText} ${styles.errorBox27}'}>방학 중 Session</text>
-        </text>
+        <div style={{justifyContent: 'center'}}>
+          <text className={styles.titleText} style={{fontSize: 24, padding: 0, margin: 0}}>방학 중 Session</text>
+        </div>
         {/* box */}
         <div className={styles.smallRowContainer}>
-          <div className={'{$styles.boxContainer} ${styles.errorBox69}'}></div>
+          <div className={styles.boxContainer} style={{width: '100%'}}></div>
         </div>
       </div>
       :
       <div className={styles.contentContainer}>
-         <div className={styles.errorBox110}>
-          <text className={'{$styles.titleText} ${styles.errorBox27}'}>방학 중 Session</text>
+        <div style={{width: 1000,}}>
+          <text className={styles.titleText} style={{fontSize: 32, padding: 0, margin: 0}}>방학 중 Session</text>
         </div>
         <div className={styles.rowContainer}>
           {/* box */}
-          <div className={'${styles.boxContainer} ${styles.errorBox69}'}></div>
+        <div className={styles.boxContainer} style={{width: '100%'}}></div>
         </div>
       </div>
       }
-
+        
       {/* content - 외부 활동 */}
       {isMobile?
       <div className={styles.contentContainer}>
       {/* 소제목 */}
-      <text className={styles.errorBox26}>
-        <text className={'{$styles.titleText} ${styles.errorBox27}'}>외부 활동</text>
-      </text>
+      <div style={{justifyContent: 'center'}}>
+        <text className={styles.titleText} style={{fontSize: 24, padding: 0, margin: 0}}>외부 활동</text>
+      </div>
       {/* 활동 1 */}
       <div className={styles.smallRowContainer}>
         <div className={styles.ImgContainer}></div>
@@ -107,22 +107,22 @@ function Program(){
       :
       <div className={styles.contentContainer}>
         {/* 소제목 */}
-         <div className={styles.errorBox110}>
-          <text className={'${styles.titleText} ${styles.errorBox27}'}>외부 활동</text>
+        <div style={{width: 1000,}}>
+          <text className={styles.titleText} style={{fontSize: 32, padding: 0, margin: 0}}>외부 활동</text>
         </div>
         <div className={styles.rowContainer}>
           {/* 활동 1 */}
-            <div className = {'${styles.columnContainer} ${styles.errorBox115}'}>
+          <div className={styles.columnContainer} style={{width: 300,}}>
             <div className={styles.ImgContainer}></div>
             <text className={styles.contentText}>활동 내용~~~</text>
           </div>
           {/* 활동 2 */}
-          <div className={'${styles.columnContainer} ${styles.errorBox115}'}>
+          <div className={styles.columnContainer}  style={{width: 300,}}>
             <div className={styles.ImgContainer}></div>
             <text className={styles.contentText}>활동 내용~~~</text>
           </div>
           {/* 활동 3 */}
-          <div className={'${styles.columnContainer} ${styles.errorBox115}'}>
+          <div className={styles.columnContainer}  style={{width: 300,}}>
             <div className={styles.ImgContainer}></div>
             <text className={styles.contentText}>활동 내용~~~</text>
           </div>

@@ -42,9 +42,3 @@ class ActivityView(TemplateView):
 
     def my_view(request, path=''):
         return render('Activity.js', context={'context_variable':'value'})
-
-
-
-
-
-

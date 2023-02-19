@@ -1,8 +1,8 @@
-import Button from './Home_Button';
-import NavBar from './NavBar';
-import BottomBar from './BottomBar';
+import Button from '../components/Home_Button';
+import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
 import styles from './Home.module.css';
-import logo from './hspace.png';
+import logo from '../components/hspace.png';
 import { useMediaQuery } from 'react-responsive';
 
 function Home (){
@@ -15,7 +15,7 @@ function Home (){
       <NavBar/>
     </header>
     <main className={`${styles.mainContainer} ${styles.mainCenter}`}>
-      <div className={styles.errorHome18}>
+      <div style={{width: '100%', display:'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
       <div className={styles.rowContainer}>
         <div className={styles.columnContainer}>
           {isMobile?
@@ -170,19 +170,19 @@ function Home (){
         </text>
         <box className={styles.histColumnContainerMobile}>
           {/* <div className={styles.historyBar}></div> */}
-          <text className={`${styles.historyYearMobile} ${styles.errorHome173}`}>History</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome174}`}>2023 : YOU KNOW THE DRILL.</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome175}`}>2022</text>
-          <text className={`${styles.histDescriptContainer} ${styles.errorHome176}`}>버그바운티 활동</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome177}`}>2021</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome178}`}>2020</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome179}`}>2019</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome180}`}>2018</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome181}`}>2017</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome182}`}>2016</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome183}`}>2015</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome184}`}>2014 : THE BEGINNING OF E-COPS</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome185}`}>E-COPS'S FOOTSTEP</text>
+          <text className={styles.historyYearMobile} style={{top: 0}}>History</text>
+          <text className={styles.historyYearMobile} style={{top: 80}}>2023 : YOU KNOW THE DRILL.</text>
+          <text className={styles.historyYearMobile} style={{top: 160}}>2022</text>
+          <text className={styles.histDescriptContainer} style={{top: 240}}>버그바운티 활동</text>
+          <text className={styles.historyYearMobile} style={{top: 320}}>2021</text>
+          <text className={styles.historyYearMobile} style={{top: 400}}>2020</text>
+          <text className={styles.historyYearMobile} style={{top: 480}}>2019</text>
+          <text className={styles.historyYearMobile} style={{top: 560}}>2018</text>
+          <text className={styles.historyYearMobile} style={{top: 640}}>2017</text>
+          <text className={styles.historyYearMobile} style={{top: 720}}>2016</text>
+          <text className={styles.historyYearMobile} style={{top: 800}}>2015</text>
+          <text className={styles.historyYearMobile} style={{top: 880}}>2014 : THE BEGINNING OF E-COPS</text>
+          <text className={styles.historyYearMobile} style={{top: 960}}>E-COPS'S FOOTSTEP</text>
         </box>
         </>
         :
@@ -192,19 +192,19 @@ function Home (){
         </text>
         <box className={styles.histColumnContainer}>
           {/* <div className={styles.historyBar}></div> */}
-          <text className={`${styles.historyYearMobile} ${styles.errorHome173}`}>History</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome174}`}>2023 : YOU KNOW THE DRILL.</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome175}`}>2022</text>
-          <text className={`${styles.histDescriptContainer} ${styles.errorHome176}`}>버그바운티 활동</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome177}`}>2021</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome178}`}>2020</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome179}`}>2019</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome180}`}>2018</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome181}`}>2017</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome182}`}>2016</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome183}`}>2015</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome184}`}>2014 : THE BEGINNING OF E-COPS</text>
-          <text className={`${styles.historyYearMobile} ${styles.errorHome185}`}>E-COPS'S FOOTSTEP</text>
+          <text className={styles.historyYear} style={{top: 0}}>History</text>
+          <text className={styles.historyYear} style={{top: 80}}>2023 : YOU KNOW THE DRILL.</text>
+          <text className={styles.historyYear} style={{top: 160}}>2022</text>
+          <text className={styles.histDescriptContainer} style={{top: 240}}>버그바운티 활동</text>
+          <text className={styles.historyYear} style={{top: 320}}>2021</text>
+          <text className={styles.historyYear} style={{top: 400}}>2020</text>
+          <text className={styles.historyYear} style={{top: 480}}>2019</text>
+          <text className={styles.historyYear} style={{top: 560}}>2018</text>
+          <text className={styles.historyYear} style={{top: 640}}>2017</text>
+          <text className={styles.historyYear} style={{top: 720}}>2016</text>
+          <text className={styles.historyYear} style={{top: 800}}>2015</text>
+          <text className={styles.historyYear} style={{top: 880}}>2014 : THE BEGINNING OF E-COPS</text>
+          <text className={styles.historyYear} style={{top: 960}}>E-COPS'S FOOTSTEP</text>
         </box>
         </>
         }

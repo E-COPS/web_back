@@ -165,7 +165,7 @@
 
 
 .background{
-    background-image: url('./ewha_logo.png');
+    background-image: url('../components/ewha_logo.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 30%;
@@ -359,44 +359,4 @@
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
-}
-
-.errorHome18{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.errorHome173{
-  top: 0;
-}
-.errorHome174{
-  top: 80px;
-}
-.errorHome175{
-  top: 160px;
-}
-.errorHome176{
-  top: 240px;
-}
-.errorHome177{
-  top: 320px;
-}
-.errorHome178{
-  top: 400px;
-}.errorHome179{
-  top: 480px;
-}.errorHome180{
-  top: 560px;
-}.errorHome181{
-  top: 640px;
-}.errorHome182{
-  top: 720px;
-}.errorHome183{
-  top: 800px;
-}.errorHome184{
-  top: 880px;
-}.errorHome185{
-  top: 960px;
 }

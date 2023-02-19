@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from './logo-img.png';
+import logo from '../images/logo-img.png';
 import { FiMenu } from "react-icons/fi";
 import styles from './NavBar.module.css';
 

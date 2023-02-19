@@ -1,7 +1,7 @@
-import NavBar from './NavBar';
-import BottomBar from './BottomBar';
+import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
 import styles from './Activity2.module.css';
-import ProfileBox from './ProfileBox';
+import ProfileBox from '../components/ProfileBox';
 
 function Challenger(){
     return (

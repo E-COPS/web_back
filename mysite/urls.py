@@ -29,18 +29,8 @@ import django.views.generic
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('api-auth',include('rest_framework.urls')),
-
     #메인 화면 - React 연결
     path('',include('app.urls')),
-
-    #path('main', views.ReactAppView.as_view),
-    #activity main페이지
-
-    #path('', include('board.urls')),
-    #api
-    #path('',include('api.urls'),)
-
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
