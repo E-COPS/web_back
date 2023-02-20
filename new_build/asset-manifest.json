@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8a114703.css",
+    "main.js": "/static/js/main.250e97d5.js",
+    "static/media/ewha_symbol.png": "/static/media/ewha_symbol.8a35bde01c62d01eaa4b.png",
+    "static/media/12th_recruit_poster.jpg": "/static/media/12th_recruit_poster.d0213b5d09c414954df4.jpg",
+    "static/media/backend-icon.png": "/static/media/backend-icon.85c4c8e53c619509fb76.png",
+    "static/media/frontend-icon.png": "/static/media/frontend-icon.22141774a29a8be0f7ef.png",
+    "static/media/blog-icon.png": "/static/media/blog-icon.145572b7ca8d314d1baa.png",
+    "static/media/mail-icon.png": "/static/media/mail-icon.6e5c4aed6731f113a18c.png",
+    "static/media/design-icon.png": "/static/media/design-icon.cdda9c291367a2a801cc.png",
+    "static/media/insta-icon.png": "/static/media/insta-icon.16b8b3de5e04a8aa4149.png",
+    "static/media/feedback-icon.png": "/static/media/feedback-icon.0076bd43a08afce7d37a.png",
+    "static/media/github-icon.png": "/static/media/github-icon.417dee75ff01906da4f5.png",
+    "index.html": "/index.html",
+    "main.8a114703.css.map": "/static/css/main.8a114703.css.map",
+    "main.250e97d5.js.map": "/static/js/main.250e97d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a114703.css",
+    "static/js/main.250e97d5.js"
+  ]
+}
