@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4977ad6.css",
-    "main.js": "/static/js/main.61e936ab.js",
+    "main.css": "/static/css/main.8a114703.css",
+    "main.js": "/static/js/main.250e97d5.js",
     "static/media/ewha_symbol.png": "/static/media/ewha_symbol.8a35bde01c62d01eaa4b.png",
     "static/media/12th_recruit_poster.jpg": "/static/media/12th_recruit_poster.d0213b5d09c414954df4.jpg",
     "static/media/backend-icon.png": "/static/media/backend-icon.85c4c8e53c619509fb76.png",
@@ -13,11 +13,11 @@
     "static/media/feedback-icon.png": "/static/media/feedback-icon.0076bd43a08afce7d37a.png",
     "static/media/github-icon.png": "/static/media/github-icon.417dee75ff01906da4f5.png",
     "index.html": "/index.html",
-    "main.f4977ad6.css.map": "/static/css/main.f4977ad6.css.map",
-    "main.61e936ab.js.map": "/static/js/main.61e936ab.js.map"
+    "main.8a114703.css.map": "/static/css/main.8a114703.css.map",
+    "main.250e97d5.js.map": "/static/js/main.250e97d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4977ad6.css",
-    "static/js/main.61e936ab.js"
+    "static/css/main.8a114703.css",
+    "static/js/main.250e97d5.js"
   ]
 }
