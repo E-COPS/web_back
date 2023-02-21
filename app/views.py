@@ -6,5 +6,7 @@ from django.shortcuts import render
 from django.views import generic
 
 import os
+def notion(request):
+    return render(request, "https://www.notion.so/ewhaecops/E-COPS-12th-Recruiting-81f6ece018cd49b68eaa1997996213a8")
 
 import mysite.settings
