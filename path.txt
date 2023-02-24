@@ -1,0 +1,3 @@
+STATIC_ROOT staticfiles
+STATICFILES_DIR ['/home/ubuntu/ecops/back_src/web_back/static']
+MEDIA_ROOT /home/ubuntu/ecops/back_src/web_back/media
